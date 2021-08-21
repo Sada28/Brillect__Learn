@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="png" href="static/css/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <title>Android</title>
+        <style>
+          footer {
+	color: #E5E8EF;
+	background: #000D;
+	padding: 50px 0; 
+}
+footer.footer-container {
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+}
+footer .social-media img{
+	width: 22px;
+}
+footer .logo {
+	width: 180px;
+	color: #fff;
+}
+footer .social-media a{
+	margin-right: 10px;
+	font-size: 22px;
+	text-decoration: none;
+}
+footer .right-col h1{
+	font-size: 26px;
+}
+footer .border{
+	width: 100px;
+	height: 4px;
+	background: linear-gradient(to right, #FA4B37, #2e7df5);
+	margin: 2px;
+}
+footer .newsletter-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+footer input::placeholder {
+  color: white !important;
+}
+footer .txtb {
+	flex: 1;
+	padding: 18px 40px;
+	font-size: 16px;
+	background: #343A40;
+	border: none;
+	font-weight: 700;
+	outline: none;
+	border-radius: 5px;
+	min-width: 260px;
+	margin-top: 20px;
+	color: white;
+}
+footer .btn {
+	margin-top: 20px;
+	padding: 18px 40px;
+	font-size: 16px;
+	color: #f1f1f1;
+	background: linear-gradient(to right, #101010, #2e7df5);
+	border: none;
+	font-weight: 700;
+	outline: none;
+	border-radius: 5px;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: opacity .3s linear;	
+}
+footer .btn:hover {
+	opacity: .7;
+}
+        </style>
+    </head>
+    <body>
+        <header >
+          
+            <div>
+              <nav class="navbar navbar-expand-lg navbar-white bg-white" >
+                <div class="container-fluid">
+                    <nav class="navbar navbar-light bg-light">
+                        <!-- <a class="navbar-brand" href="#"> -->
+                          <img src="static/images/brilct.png" height="50px" width="120px" alt="logo">
+                        </a>
+                      </nav>
+                  <!-- <a class="navbar-brand" href="#" style="color: blue;"><b> Brillect Learn </b></a> -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{%url 'ind'%}">Home</a>
+                      </li>
+                      
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="{%url 'clang'%}"><b>C programming</b></a></li>
+                          <li><a class="dropdown-item" href="{%url 'cpp'%}"><b>C++ programming</b></a></li>
+                          <li><a class="dropdown-item" href="{%url 'py'%}"><b>Python programming</b></a></li>
+                          <li><a class="dropdown-item" href="{%url 'ml'%}"><b>Machine Learning</b></a></li>
+                          <li><a class="dropdown-item" href="{%url 'java'%}"><b>Java programming</b></a></li>
+                          <li><a class="dropdown-item" href="{%url 'android'%}"><b>Android Development</b></a></li>
+                          <li><a class="dropdown-item" href="{%url 'web'%}"><b>Web Development</b></a></li>
+                          
+        
+                        </ul>
+                      </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                      <form class="d-flex">
+                        <input class="st-default-search-input" type="search"  style="width:600px; height:45px" placeholder="Search" aria-label="Search">&nbsp;&nbsp;
+                        <button class="btn btn-primary" type="submit">Search</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                       
+                      </form>
+        
+                      <b class="text-dark" style="margin-top: 8px;">
+                        {% if request.session.Email %}
+                        {{request.session.Email}}
+                      </b> &nbsp;&nbsp;
+                        <a class="nav-link active" href="{%url 'ind'%}">LOGOUT</a>
+                        {% else %}
+                        
+                        {% endif %}
+                      </ul>  
+                  </div>
+                </div>
+               
+              </nav>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+            </div>
+            </header>
+           
+<br>
+        <main>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                 <img src="../static/images/androidd.png"  alt="Avatar" style="margin-left: 200px;"> 
+                  <h1 class="card-title">Android</h1>
+                  <p class="card-text">The Android operating system is the largest installed base among various mobile platforms across the globe. 
+                    Hundreds of millions of mobile devices are powered by Android in more than 190 countries of the world. 
+                    It conquered around 75% of the global market share by the end of 2020, and this trend is growing bigger every other day. 
+                    The company named Open Handset Alliance developed Android for the first time that is based on the modified version of the Linux kernel and other open-source software. Google sponsored the project at initial stages and in the year 2005, it acquired the whole company. 
+                    In September 2008, the first Android-powered device launched in the market. Android dominates the mobile OS industry because of the long list of features it provides. It’s user-friendly, has huge community support, provides a greater extent of customization, and a large number of companies build Android-compatible smartphones. 
+                    As a result, the market observes a sharp increase in the demand for developing Android mobile applications, 
+                    and with that companies need smart developers with the right skill set. At first, 
+                    the purpose of Android was thought of as a mobile operating system. However, with the advancement of code libraries and its popularity among developers of the divergent domain,
+                     Android becomes an absolute set of software for all devices like tablets, wearables, set-top boxes, smart TVs, notebooks, etc.</p>
+                  <a href="https://code.visualstudio.com/" class="btn btn-primary" target="_blank">Download Software</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h2 class="card-title">Android Language Notes For Beginners</h2>
+                  <p class="card-text">I have written these notes, practice sheets, and source code just for you. These are available for free to download and use. However, some bad people may start selling this material to some innocent students for some money!
+
+                    C programming is the best way to learn to code and get your journey started as a programmer. We will make two fun games during the course which you can even play during your free time. There are practice sets included along with Free Handwritten notes for all the chapters. You can download them from the links below.
+                    
+                    Note: You can either download the notes, or you can read them on this site itself. PDF download links for all the chapters are at the end of the page</p><br>
+                    
+                    <center class="card-title"><h4> Get Started With Your Android  Notes </h4></center><br>
+                    <ul>
+                    <center> <a href="../static/pdf/Android.pdf" target="_blank" class="btn btn-primary" >Download Content</a></center>
+                    <br><br><br><br><br><br> <br><br><br><br><br><br>
+                  </ul>
+                   
+                </div>
+              </div>
+            </div>
+          </div>     
+   </main>
+   <br>
+<!-- FOOTER -->
+	<!-- Footer -->
+  <footer class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+    
+      <!-- Social buttons -->
+      <center class="fw-light text-white" style="font-size: 30px;">Contact Us</center> <br>
+      <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="https://www.facebook.com/Brillect-Tech-Solutions-Pvt-Ltd-101851795104644/?hc_ref=ARTjeXho5PB0YjPAULDjZDxSMkvNPGiZUCgc4WqmX9IhmKhiJiPRaQbzQMx8z-PsqX8&ref=nf_target&__tn__=kC-R"><img src="../static/images/facebookkk.png"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://www.instagram.com/brillect20/"><img src="../static/images/instagram.png"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://twitter.com/BrillectL"><img src="../static/images/twitter.png"></a>
+      </li>
+      <li class="list-inline-item">
+        <a href="https://in.linkedin.com/company/brillect"><img src="../static/images/logolink.png" style="margin-bottom: 3px; margin-left: 5px;"></a>
+      </li>
+      
+      </ul>
+      <!-- Social buttons -->
+    
+    </div>
+    <!-- Footer Elements -->
+    
+    <!-- Copyright -->
+    <br>
+    <br>
+    <div class="footer-copyright text-center py-3">Copyright © 2021  All Rights Reserved.
+     
+    </div>
+    <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+    </body>
+</html>

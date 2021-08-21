@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="static/css/logo.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<title>    Briellct Learn</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+	<!doctype html>
+	<html lang="en">
+	  <head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	
+		<title>Home</title>
+		 <style>
+			 
+	
+	
+			</style>
+		
+	  </head>
+	  <body>
+		<nav class="navbar navbar-expand-lg navbar-white bg-white">
+			<div class="container-fluid">
+				<nav class="navbar navbar-white bg-white">
+					<a class="navbar-brand" href="#">
+						<img src="static/images/brilct.png" height="50px" width="120px" alt="logo">
+					</a>
+				  </nav>
+			  <!-- <a class="navbar-brand" href="#" style="color: blue;"><b> Brillect Learn </b></a> -->
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="{%url 'ind'%}" style="color: black;">Home</a>
+				  </li>
+				  
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">Courses
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<li><a class="dropdown-item" href="{%url 'clang'%}"><b>C programming</b></a></li>
+						<li><a class="dropdown-item" href="{%url 'cpp'%}"><b>C++ programming</b></a></li>
+						<li><a class="dropdown-item" href="{%url 'py'%}"><b>Python programming</b></a></li>
+						<li><a class="dropdown-item" href="{%url 'ml'%}"><b>Machine Learning</b></a></li>
+						<li><a class="dropdown-item" href="{%url 'java'%}"><b>Java programming</b></a></li>
+						<li><a class="dropdown-item" href="{%url 'android'%}"><b>Android Development</b></a></li>
+						<li><a class="dropdown-item" href="{%url 'web'%}"><b>Web Development</b></a></li>
+						
+	  
+					  </ul>
+					</li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				  
+				  <form class="d-flex">
+					<input class="st-default-search-input" type="search"  style="width:400px; height:45px" placeholder="Search" aria-label="Search">&nbsp;&nbsp;
+					<button class="btn btn-primary" type="submit" >Search</button>
+					 <a href="{%url 'Log'%}" class="btn btn-dark" type="submit" style="margin-left: 250px;">SignIN</a> &nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="{%url 'reg'%}" class="btn btn-dark" type="submit" >SignUP</a>
+				   </form>
+				  </ul>  
+			  </div>
+			</div>
+		  </nav>
+		  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<div class="head-container">
+			<div class="quote">
+				<p style="font-family: Georgia, 'Times New Roman', Times, serif;">The beautiful thing about learning is that nobody can take it away from you</p>
+				<h4 style="color: #2e7df5; font-family: Berlin Sans FB;">Education is the process of facilitating learning,or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!</h4>
+				
+			</div>
+			<div class="svg-image">
+				<img src="../static/images/ind2.png">
+			</div>
+		</div>
+		
+	</header>
+
+
+<!-- Some Popular Subjects -->
+	
+	
+<!-- ABOUT -->
+<div class="diffSection" id="portfolio_section">
+	<center class="fw-light text-dark"><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">About</p></center>
+	<div class="content">
+		<p style="color: black;">
+			Brillect Learn is a genuine platform to improvise  your computer skilss into real World.
+We just want to deliver quality software products and to be the most reliable technology solutions partner.
+And To be the leading technology solution partner and first company of choice for every organization and individual, by catering the needs and providing simple solutions to carry out the business efficiently and smoothly.
+		</p>
+	</div>
+</div>
+
+<!-- PORTFOLIO -->
+	<div class="diffSection" id="portfolio_section">
+		<center class="fw-light text-dark"><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Portfolio</p></center>
+		<div class="content">
+			<p style="color: black;">
+				Education is the process of facilitating learning, or the acquisition of knowledge, Skills ,values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research.<br> Educational website can include websites that have games, videos or topic related resources that act as tools to enhance learning and supplement classroom teaching. These websites help make the process of learning entertaining and attractive to the student, especially in today's age. <br>
+				
+			</p>
+		</div>
+	</div>
+	
+
+
+<!-- TEAM -->
+	
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+			<center class="fw-light text-dark"><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: rgb(0, 0, 0);">Our Courses</p></center>
+		</div>
+		<a href="{%url 'clang'%}"><div class="s-card"><img src="../static/images/clang.png"><p>C Language</p></div></a>
+		<a href="{%url 'cpp'%}"><div class="s-card"><img src="../static/images/cpprbg.png"><p>C++</p></div></a>
+		<a href="{%url 'java'%}"><div class="s-card"><img src="../static/images/javabg.png"><p>Java</p></div></a>
+		<a href="{%url 'web'%}"><div class="s-card"><img src="../static/images/webdevop.png"><p>Web Development</p></div></a>
+		<a href="{%url 'py'%}"><div class="s-card"><img src="../static/images/py.png"><p>Python</p></div></a>
+		<a href="{%url 'ml'%}"><div class="s-card"><img src="../static/images/MachineL.png"><p>Machine Learning</p></div></a>
+		<a href="{%url 'android'%}"><div class="s-card"><img src="../static/images/Androiddd.png"><p>Android</p></div></a>
+	</div>
+
+ 
+
+
+
+	
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #2e7df5, #101010); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” “Your attitude, not your aptitude, will determine your altitude.” “If you think education is expensive, try ignorance.” “The only person who is educated is the one who has learned how to learn …and change.”</div></marquee>
+
+<!-- Team Section  -->
+<div>
+	<div class="container">
+	  <center class="fw-light text-dark"><h1>Meet Our Mentor </h1></center>
+	</div>
+</div>
+	  
+<br>
+
+<!-- Page Content -->
+<div class="container">
+	<div class="row" >
+	  <!-- Team Member 1 -->
+	  <div class="col-xl-3 col-md-6 mb-4"  style="margin-left: 500px;">
+		<div class="card border-0 shadow">
+		  <img src="../static/images/mohini.jfif" class="card-img-top" alt="...">
+		  <div class="card-body text-center">
+			<h5 class="card-title mb-0">Mentor </h5>
+			<h6 class="text-dark"> Mohini Rahate</h6>
+			
+			<div class="card-text text-black-50">Software developer</div>
+		  </div>
+		</div>
+	  </div>
+<div>
+	<div class="container">
+	  <center class="fw-light text-dark"><h1>Meet Our Team </h1></center>
+	</div>
+</div>
+	  
+<br>
+
+<!-- Page Content -->
+<div class="container">
+	<div class="row">
+	  <!-- Team Member 1 -->
+	  <div class="col-xl-3 col-md-6 mb-4">
+		<div class="card border-0 shadow">
+		  <img src="../static/images/ayush1.jpeg" class="card-img-top" alt="...">
+		  <div class="card-body text-center">
+			<h5 class="card-title mb-0">Team Leader</h5>
+			<h6 class="text-dark"> Ayush Gajbhiye</h6>
+			
+			<div class="card-text text-black-50">Python Intern</div>
+		  </div>
+		</div>
+	  </div>
+	  <!-- Team Member 2 -->
+	  <div class="col-xl-3 col-md-6 mb-4">
+		<div class="card border-0 shadow">
+		  <img src="../static/images/sadduuu.jpg" class="card-img-top" alt="...">
+		  <div class="card-body text-center">
+			<h5 class="card-title mb-0">Team Member</h5>
+			<h6 class="text-dark"> Sadanand Madame</h6>
+			<div class="card-text text-black-50">Python Intern</div>
+		  </div>
+		</div>
+	  </div>
+	  <!-- Team Member 3 -->
+	  <div class="col-xl-3 col-md-6 mb-4">
+		<div class="card border-0 shadow">
+		  <img src="../static/images/Swapnil1.jpg" class="card-img-top" alt="...">
+		  <div class="card-body text-center">
+			<h5 class="card-title mb-0">Team Member</h5>
+			<h6 class="text-dark"> Swapnil Nandeshwar</h6>
+			<div class="card-text text-black-50">Python Intern</div>
+		  </div>
+		</div>
+	  </div>
+	  <!-- Team Member 4 -->
+	  <div class="col-xl-3 col-md-6 mb-4">
+		<div class="card border-0 shadow">
+		  <img src="../static/images/himanshu1.JPG" class="card-img-top" alt="...">
+		  <div class="card-body text-center">
+			<h5 class="card-title mb-0">Team Member</h5>
+			<h6 class="text-dark"> Himanshu Badwaik</h6>
+			<div class="card-text text-black-50">Python Intern</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+</div>
+<!-- FOOTER -->	
+<footer class="page-footer font-small special-color-dark pt-4">
+
+	<!-- Footer Elements -->
+	<div class="container">
+  
+	  <!-- Social buttons -->
+	  <center class="fw-light text-white" style="font-size: 30px;">Contact Us</center> <br>
+	  <ul class="list-unstyled list-inline text-center">
+		<li class="list-inline-item">
+			<a href="https://www.facebook.com/Brillect-Tech-Solutions-Pvt-Ltd-101851795104644/?hc_ref=ARTjeXho5PB0YjPAULDjZDxSMkvNPGiZUCgc4WqmX9IhmKhiJiPRaQbzQMx8z-PsqX8&ref=nf_target&__tn__=kC-R"><img src="../static/images/facebookkk.png"></a>
+		</li>
+		<li class="list-inline-item">
+			<a href="https://www.instagram.com/brillect20/"><img src="../static/images/instagram.png"></a>
+		</li>
+		<li class="list-inline-item">
+			<a href="https://twitter.com/BrillectL"><img src="../static/images/twitter.png"></a>
+		</li>
+		<li class="list-inline-item">
+			<a href="https://in.linkedin.com/company/brillect"><img src="../static/images/logolink.png" style="margin-bottom: 3px; margin-left: 5px;"></a>
+		</li>
+		
+		
+	  </ul>
+	  <!-- Social buttons -->
+  
+	</div>
+	<!-- Footer Elements -->
+  
+	<!-- Copyright -->
+	<br>
+	<br>
+	<div class="footer-copyright text-center py-3">Copyright © 2021  All Rights Reserved.
+	 
+	</div>
+	<!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
